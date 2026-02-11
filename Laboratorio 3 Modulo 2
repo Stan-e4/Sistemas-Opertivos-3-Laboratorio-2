@@ -1,0 +1,16 @@
+lsblk
+sudo fdisk /dev/sdb
+n
+p
+1
+ENTER
+ENTER
+w
+sudo mkfs.ext4 /dev/sdb1
+mkdir ~/Escritorio/disco20GB
+sudo mount /dev/sdb1 ~/Escritorio/disco20GB
+cd ~/Escritorio/disco20GB
+touch AdrianAlcantara.txt
+sudo umount ~/Escritorio/disco20GB
+sudo mount /dev/sdb1 /mnt
+ls /mnt
