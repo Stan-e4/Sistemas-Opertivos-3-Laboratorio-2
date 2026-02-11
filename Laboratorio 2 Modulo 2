@@ -1,0 +1,9 @@
+crontab -e
+0 23 * * * sudo apt update && sudo apt upgrade -y
+0 3 * * 0 sudo reboot
+sudo apt install at -y
+sudo systemctl start atd
+sudo systemctl enable atd
+ls /tmp
+echo "rm -rf /tmp/*" | at now + 1 minute
+ls /tmp
