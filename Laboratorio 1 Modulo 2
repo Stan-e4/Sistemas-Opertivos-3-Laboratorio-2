@@ -1,0 +1,13 @@
+sudo apt update
+sudo apt upgrade -y
+cat /etc/apt/sources.list
+ls /etc/apt/sources.list.d/
+apt search bashtop
+sudo apt install bashtop
+cd bashtop
+sudo make install
+bashtop
+which bashtop
+sudo rm /usr/local/bin/bashtop
+sudo rm -rf /usr/local/bin/bashtop
+sudo apt autoremove -y
